@@ -19,6 +19,10 @@
   color: #fff;
 }
 
+.color-gray {
+  color: #B4AEAE;
+}
+
 #user-icon-small {
   height: 40px;
 }
@@ -46,4 +50,45 @@ h4 {
   border-radius: 5px;
   position: absolute;
   bottom: 0px;
+}
+
+.sub-header {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.filter-container {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter-selected {
+  background-color: #8871CC;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+.filter-no-selected {
+  background-color: #FFF;
+  border-radius: 25px;
+  padding: 5px 15px;
+  color: #8871CC;
+  border: 1px solid #8871CC;
+}
+
+.add-button {
+  background-color: #15D892;
+  color: #FFF;
+  padding: 8px 25px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
