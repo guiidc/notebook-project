@@ -1,3 +1,49 @@
-h1 {
-  color: red;
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: linear-gradient(to bottom, #493D7D, #7A6C9D);
+  height: 300px;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.color-white {
+  color: #fff;
+}
+
+#user-icon-small {
+  height: 40px;
+}
+
+h4 {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.info-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.tab {
+  background-color: #8871CC;
+  font-size: 20px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
 }
