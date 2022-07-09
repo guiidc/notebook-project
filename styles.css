@@ -7,7 +7,7 @@
 
 .header {
   background-image: linear-gradient(to bottom, #493D7D, #7A6C9D);
-  height: 300px;
+  height: 200px;
   width: 100%;
   padding: 15px 50px;
   display: flex;
@@ -21,6 +21,17 @@
 
 .color-gray {
   color: #B4AEAE;
+}
+
+.color-black {
+  color: #000
+}
+
+.bg-blue {
+  background-color: #15AED8
+}
+.bg-red {
+  background-color: #D7426F
 }
 
 #user-icon-small {
@@ -96,10 +107,134 @@ h4 {
 .list-header {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 2fr;
-  padding: 20px 30px;
-  margin: 50px;
+  padding: 30px;
+  margin: 50px 50px 2px 50px;
   background-color: #F7F7F7;
   border-radius: 7px;
   box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.3);
   font-size: 20px;
+}
+.contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  padding: 20px 30px;
+  margin: 0 50px 5px 50px;
+  background-color: #FFF;
+  border-radius: 7px;
+  box-shadow: 0 3px 3px 2px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+.actions-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+}
+
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 50px;
+  max-width: 500px;
+}
+
+.modal-title {
+  display: flex;
+  align-items: center;
+  color: #8871CC;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.modal-title img {
+  height: 50px;
+}
+
+.description {
+  text-align: center;
+  color: #8871CC;
+  font-size: 20px;
+}
+
+.modal-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.modal-inputs input {
+  border: 2px solid #8871CC;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0 5px;
+  outline: none;
+  font-size: 20px;
+}
+.modal-inputs select, .modal-inputs option {
+  border: 2px solid #8871CC;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0 5px;
+  outline: none;
+  font-size: 20px;
+}
+
+.modal-inputs inut::placeholder {
+  color: #B4AEAE;
+}
+
+.modal-actions-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.modal-actions-buttons button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 140px;
+}
+
+#cancel-contact {
+  border: 2px solid #8871CC;
+  color: #8871CC;
+  background-color: transparent;
+}
+#save-contact {
+  color: #FFF;
+  background-color: #15D892;
+}
+
+
+
+.none {
+  display: none;
 }
