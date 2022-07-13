@@ -197,3 +197,42 @@ header {
     color: #8871CC;
 
 }
+
+.container-cria-cont {
+    position: absolute;
+    width: 277px;
+    height: 54px;
+    left: 850px;
+    top: 310px;
+
+    background: #15D892;
+    border-radius: 5px;
+}
+
+.criar-contato {
+    justify-content: center;
+    display: flex;
+    width: 290px;
+    height: 28px;
+    left: 1120px;
+    top: 323px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+}
+
+.vector+ {
+    position: absolute;
+    left: 6.25%;
+    right: 6.25%;
+    top: 6.25%;
+    bottom: 6.25%;
+
+    background: #FFFFFF
+}
