@@ -15,12 +15,6 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.info-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .phone-book-app {
     font-family: 'Roboto';
     font-style: normal;
@@ -35,19 +29,15 @@ header {
     font-weight: 700;
     font-size: 22px;
     color: #FFFFFF;
-
 }
 
-.meus-contatos {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: #FFFFFF;
-
+.container-informacao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.container-contato {
+.container-meus-contato {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -59,10 +49,20 @@ header {
 
     background: #8871CC;
     border-radius: 5px 5px 0px 0px;
-
 }
 
-.vector {}
+.meus-contatos {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.container-filtros {
+    display: flex;
+    gap: 15px;
+}
 
 .container-filtro {
     display: inline-flex;
@@ -73,9 +73,8 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #B4AEAE;
-
 }
 
 .container-familia {
@@ -85,15 +84,14 @@ header {
     background: #8871CC;
     border-radius: 25px;
     width: 147px;
-    height: 45px;
-
+    height: 35px;
 }
 
 .familia {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
 }
 
@@ -102,7 +100,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 147px;
-    height: 45px;
+    height: 35px;
     background: #FFFFFF;
     border: 2px solid #8871CC;
     border-radius: 25px;
@@ -113,8 +111,7 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-
+    font-size: 20px;
     color: #8871CC;
 }
 
@@ -123,7 +120,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 120px;
-    height: 45px;
+    height: 35px;
     background: #FFFFFF;
     border: 2px solid #8871CC;
     border-radius: 25px;
@@ -134,17 +131,16 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     color: #8871CC;
 }
 
-.container-cria-cont {
+.container-criar-contato {
     display: flex;
     align-items: center;
-    padding: 12px 30px;
+    padding: 5px 30px;
     gap: 5px;
-
-    background: #15D892;
+    background: #14b67b;
     border-radius: 5px;
 }
 
@@ -152,9 +148,8 @@ header {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
     color: #FFFFFF;
-
 }
 
 section {
@@ -165,7 +160,19 @@ section {
     padding: 0px 70px;
 }
 
-.container-filtros {
-    display: flex;
-    gap: 15px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
