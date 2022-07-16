@@ -219,31 +219,35 @@ header {
 
 .container-lista-de-contatos {
     display: flex;
-    margin: 0px 100px;
+    margin: 0px 60px;
     gap: 150px;
 }
 
 .lista-de-contatos {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    
+    width: 200px;
+    margin: 0px -60px;
+
 }
 
 .nome-contato {
-    display: inline-flex;
+    padding: 0px 50px;
+    left: 0px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     color: #B4AEAE;
-    
+
 }
 
 .numero-de-telefone {
     display: flex;
-    gap: 15px;
+    margin: 0px 10px;
+
 }
 
 .telefone {
@@ -257,11 +261,12 @@ header {
 
 .lista-de-grupos {
     display: flex;
-    gap: 15px;
+    margin: 0px 52px;
+
 }
 
 .grupos {
-    padding: 0px 65px;
+    padding: 0px 6px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -271,8 +276,9 @@ header {
 }
 
 .container-seletores {
-   display: flex;
+    display: flex;
     gap: 10px;
+    margin: 0px -30px;
 }
 
 .editar {
@@ -299,8 +305,9 @@ header {
 
 #section-3 {
     display: flex;
+    justify-content: ;
     align-items: center;
-    padding: 12px 0px;
+    padding: 12px 50px;
     margin: 1px 70px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
