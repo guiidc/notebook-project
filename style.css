@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 header {
     position: relative;
     display: flex;
@@ -14,8 +15,6 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
 .phone-book-app {
     font-family: 'Roboto';
     font-style: normal;
@@ -24,11 +23,11 @@ header {
     color: #FFFFFF;
 }
 
-.ola-usuario {
+.font4 {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: 800;
+    font-size: 21px;
     color: #FFFFFF;
 }
 
@@ -47,35 +46,21 @@ header {
     height: 45px;
     left: 70px;
     bottom: 0px;
-
     background: #8871CC;
     border-radius: 5px 5px 0px 0px;
 }
 
-.meus-contatos {
+.font3 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
-}
-
-.container-filtros {
-    display: flex;
-    gap: 15px;
 }
 
 .container-filtro {
     display: inline-flex;
     margin: 5px;
-}
-
-.filtro {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #B4AEAE;
 }
 
 .container-familia {
@@ -88,15 +73,7 @@ header {
     height: 30px;
 }
 
-.familia {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-
-.container-amigos {
+.container-font2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,28 +84,7 @@ header {
     border-radius: 25px;
 }
 
-.amigos {
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #8871CC;
-}
-
-.container-outros {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 2px solid #8871CC;
-    border-radius: 25px;
-}
-
-.outros {
-
+.font2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -145,33 +101,13 @@ header {
     border-radius: 5px;
 }
 
-.criar-contato {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-
 #section-1 {
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 0px 50px;
     margin: 20px;
-
 }
-
-/* .container-cabeçalho-lista-contatos {
-    display: flex;
-    gap: 200px;
-} */
-
-/* .container-nome {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-} */
 
 .font1 {
     font-family: 'Roboto';
@@ -180,16 +116,6 @@ header {
     font-size: 18px;
     color: #B4AEAE;
 }
-
-/* .container-contato {
-    display: flex;
-    gap: 15px;
-} */
-
-/* .container-grupo {
-    display: flex; 
-    gap: 15px;
-} */
 
 #section-2 {
     padding: 13px 15px;
@@ -204,112 +130,102 @@ header {
     display: flex;
     margin: 0px 60px;
     gap: 150px;
-
 }
-
-/* .lista-de-contatos {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    margin: 0px -60px;
-} */
 
 .alinha-centro {
     display: flex;
     align-items: center;
 }
 
-/* .nome-contato {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #B4AEAE;
-} */
-
-/* .numero-de-telefone {
-    display: flex;
-    margin: 0px 10px;
-    align-items: center;
-} */
-
-/* .telefone {
-    padding: 0px 5px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #B4AEAE;
-} */
-
-/* .lista-de-grupos {
-    display: flex;
-    margin: 0px 52px;
-    align-items: center;
-} */
-
-/* .grupos {
-    padding: 0px 6px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #B4AEAE;
-
-} */
-
 .container-seletores {
-    display: flex; 
+    display: flex;
     gap: 10px;
-    /* margin: 0px -30px; */
     justify-content: flex-end;
-    
-    
 }
 
-.editar {
+.font5 {
     border-radius: 3px;
     padding: 10px 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.bg-azul {
     background: #15AED8;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: white;
 }
 
-.remover {
-    border-radius: 3px;
-    padding: 10px 10px;
+.bg-vermelho {
     background: #D7426F;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: white;
 }
 
 #section-3 {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     padding: 12px 15px;
     margin: 1px 70px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    /* gap: 60px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* #section-3 {} */
+#section-4 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-adicionar-editar {
+    background: white;
+    width: 40%;
+    min-width: 300px;
+    padding: 60px;
+    gap: 100px;
+}
 
 
-.teste {
-  height: 300px;
-  border: 1px solid red;
-  overflow: auto;
+.icon-large {
+    display: flex;
+    width: 15%;
+}
+
+.contaner-font5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 30px;
+    line-height: 40px;
+    gap: 10px;
+    color: #8871CC;
+}
+
+.txt1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #8871CC;
+}
+
+.input {
+    padding: 0px 50px 0px;
+
+
+
 }
