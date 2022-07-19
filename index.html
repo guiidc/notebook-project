@@ -47,9 +47,6 @@
             <span class="font2">Outros</span>
         </div>
 
-        <!-- <div class="container-filtros">
-        </div> -->
-
         <div class="container-criar-contato">
             <img class="vector-mais" src="./images/plus-icon.svg" alt="vector+">
             <span class="font4">Criar contato</span>
@@ -86,14 +83,11 @@
         <div class="alinha-centro">
             <span class="font1">telefone</span>
         </div>
-
-        <div class="alinha-centro">
-            <span class="font1">grupos</span>
-        </div>
-
-        <!-- <div class="container-lista-de-contatos">
-        </div> -->
-
+        
+                <div class="alinha-centro">
+                    <span class="font1">grupos</span>
+                </div>
+        
         <div class="container-seletores">
             <span class="font5 bg-azul">EDITAR</span>
             <span class="font5 bg-vermelho">REMOVER</span>
@@ -101,35 +95,57 @@
 
     </section>
 
-    <Section id="section-4">
+    <!-- <section class="section-4">
         <div class="modal-adicionar-editar">
             <div class="contaner-font5">
                 <img class="icon-large" src="./images/user-icon-large.svg" alt="icon-large">
                 <span class="font6">CONTATO</span>
             </div>
 
-            <p class="txt1">Edite ou adicione as informações para seu contato
-                no formulário a baixo.
-            </p>
-
-            <div class="input">
-                <input class="txt1" type="text" placeholder="Nome completo">
-                <input class="txt1" type="text" placeholder="Contato">
-                <input class="txt1" type="text" placeholder="Grupo">
+            <div class=" container-txt1">
+                <p class="txt1">Edite ou adicione as informações para seu contato
+                    no formulário a baixo.
+                </p>
             </div>
 
-            <div class="button">
+            <div class="container-inputs">
+                <input class="input1" type="text" placeholder="Nome completo">
+                <input class="input1" type="text" placeholder="Contato">
+                <select class="input1" name="grupo" id="grupo">
+                    <option value="familia">Família</option>
+                    <option value="amigos">Amigos</option>
+                    <option value="outros">Outros</option>
+                </select>
+            </div>
+
+            <div class="container-buttons">
                 <button class="cancelar">Cancelar</button>
-                <button class="REMOVER2">REMOVER</button>
+                <button class="salvar">SALVAR</button>
             </div>
+
         </div>
 
+    </section> -->
+
+    <section class="section-5">
+        <div class="modal-remover-contato">
+
+            <div class="modal-menor">
+                <img class="attention-icon"src="./images/attention-icon.svg" alt="attention-icon">
+                <span class="atençao">ATENÇÃO</span>
+                <p class="txt2">Você tem certeza que deseja remover este contato?</p>
+            </div>
+
+            <div class="container-buttons2">
+                <button class="cancelar2">Cancelar</button>
+                <button class="remover">REMOVER</button>
+            </div>
+
+        </div>
+
+    </section>
 
 
-
-
-
-    </Section>
 </body>
 
 </html>

@@ -172,7 +172,8 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#section-4 {
+.section-4 {
+
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.25);
@@ -182,50 +183,179 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .modal-adicionar-editar {
-    background: white;
-    width: 40%;
-    min-width: 300px;
-    padding: 60px;
-    gap: 100px;
+    display: flex;
+    padding: 30px 70px 100px 70px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    gap: 20px;
 }
-
 
 .icon-large {
     display: flex;
-    width: 15%;
+    width: 50px;
 }
 
 .contaner-font5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px;
     font-family: 'Roboto';
     font-style: normal;
-    /* font-weight: 700; */
+    font-weight: 700;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 50px;
     gap: 10px;
     color: #8871CC;
 }
 
 .txt1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    /* font-weight: 400; */
     font-size: 17px;
-    line-height: 23px;
     text-align: center;
     color: #8871CC;
 }
 
-.input {
-    padding: 0px 50px 0px;
+.container-txt1 {
+    width: 350px;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input1 {
+    height: 30px;
+    padding: 0px 10px;
+    border: 1px solid #8871CC;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+}
+
+.input1:focus {
+    outline: 1.5px solid #8871CC;
+}
+
+.input1::placeholder {
+    color: #a9a9a9;
+}
+
+.container-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cancelar {
+    width: 150px;
+    height: 40px;
+    background: white;
+    border: 2px solid #8871CC;
+    border-radius: 5px;
+    color: #8871CC;
+    cursor: pointer;
+}
+
+.salvar {
+    width: 150px;
+    height: 40px;
+    background: #15D892;
+    border: 4px solid #15D892;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* .none {
+    display: none
+} */
+
+.section-5 {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-remover-contato {
+    display: flex;
+    padding: 20px 70px 30px 70px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.modal-menor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attention-icon {
+    display: flex;
+    width: 90px;
+}
+
+.atençao {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47px;
+    color: #8871CC;
+}
+
+.txt2 {
+    margin: 0px 0px 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #B4AEAE;
+}
+
+.container-buttons2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 
 
+.cancelar2 {
+    width: 150px;
+    height: 40px;
+    background: white;
+    border: 2px solid #8871CC;
+    border-radius: 5px;
+    color: #8871CC;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
 
+.remover {
+    width: 150px;
+    height: 40px;
+    background: #D7426F;
+    border: 2px solid #D7426F;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-size: 18px;
 }
