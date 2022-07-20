@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
+.section-1 {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,13 @@ header {
     color: #FFFFFF;
 }
 
-.font4 {
+.container-usuario-vetor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ola-Usuario{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
@@ -31,13 +37,7 @@ header {
     color: #FFFFFF;
 }
 
-.container-informacao {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.container-meus-contato {
+.container-meus-contatos {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -50,7 +50,7 @@ header {
     border-radius: 5px 5px 0px 0px;
 }
 
-.font3 {
+.meus-contato{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -58,9 +58,31 @@ header {
     color: #FFFFFF;
 }
 
-.container-filtro {
+#section-2 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    margin: 20px;
+}
+
+.container-tipo-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-filtrar-por {
     display: inline-flex;
     margin: 5px;
+}
+
+.filtrar-por{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #B4AEAE;
 }
 
 .container-familia {
@@ -73,7 +95,15 @@ header {
     height: 30px;
 }
 
-.container-font2 {
+.familia{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.container-amigos {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +114,7 @@ header {
     border-radius: 25px;
 }
 
-.font2 {
+.amigos {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -92,7 +122,27 @@ header {
     color: #8871CC;
 }
 
-.container-criar-contato {
+.container-outros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 2px solid #8871CC;
+    border-radius: 25px;
+}
+
+.outros{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #8871CC;
+}
+
+.button-criar-contato {
+    border: none;
     display: flex;
     align-items: center;
     padding: 2px 20px;
@@ -101,23 +151,15 @@ header {
     border-radius: 5px;
 }
 
-#section-1 {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    padding: 0px 50px;
-    margin: 20px;
-}
-
-.font1 {
+.cria-contato {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #B4AEAE;
+    font-weight: 800;
+    font-size: 21px;
+    color: #FFFFFF;
 }
 
-#section-2 {
+#section-3 {
     padding: 13px 15px;
     margin: 3px 70px;
     background-color: #efefef;
@@ -126,15 +168,40 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr
 }
 
-.container-lista-de-contatos {
-    display: flex;
-    margin: 0px 60px;
-    gap: 150px;
-}
-
-.alinha-centro {
+.container-section-3{
     display: flex;
     align-items: center;
+}
+
+.section-3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #B4AEAE; 
+}
+
+#section-4 {
+    padding: 12px 15px;
+    margin: 1px 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-section-4 {
+    display: flex;
+    align-items: center;
+}
+
+.section-4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #B4AEAE;
 }
 
 .container-seletores {
@@ -143,10 +210,10 @@ header {
     justify-content: flex-end;
 }
 
-.font5 {
+.seletor {
+    border: none;
     border-radius: 3px;
     padding: 10px 10px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -162,27 +229,20 @@ header {
     background: #D7426F;
 }
 
-#section-3 {
-    padding: 12px 15px;
-    margin: 1px 70px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.section-4 {
-
+.section-5 {
+    display: none;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0px;
     left: 0px;
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section-5.none{
+    display: flex;
 }
 
 .modal-adicionar-editar {
@@ -191,17 +251,11 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     gap: 20px;
 }
 
-.icon-large {
-    display: flex;
-    width: 50px;
-}
-
-.contaner-font5 {
+.container-modal-1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,14 +268,19 @@ header {
     color: #8871CC;
 }
 
-.txt1 {
+.icon-large {
+    display: flex;
+    width: 50px;
+}
+
+.container-p {
+    width: 350px;
+}
+
+.texto {
     font-size: 17px;
     text-align: center;
     color: #8871CC;
-}
-
-.container-txt1 {
-    width: 350px;
 }
 
 .container-inputs {
@@ -230,7 +289,11 @@ header {
     gap: 10px;
 }
 
-.input1 {
+.input1::placeholder {
+    color: #a9a9a9;
+}
+
+.input-txt {
     height: 30px;
     padding: 0px 10px;
     border: 1px solid #8871CC;
@@ -242,10 +305,6 @@ header {
 
 .input1:focus {
     outline: 1.5px solid #8871CC;
-}
-
-.input1::placeholder {
-    color: #a9a9a9;
 }
 
 .container-buttons {
@@ -261,7 +320,6 @@ header {
     border: 2px solid #8871CC;
     border-radius: 5px;
     color: #8871CC;
-    cursor: pointer;
 }
 
 .salvar {
@@ -271,23 +329,22 @@ header {
     border: 4px solid #15D892;
     border-radius: 5px;
     color: white;
-    cursor: pointer;
 }
 
-/* .none {
-    display: none
-} */
-
-.section-5 {
+.section-6 {
+    display: none;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0px;
     left: 0px;
-    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section-6.none{
+    display: flex;
 }
 
 .modal-remover-contato {
@@ -296,12 +353,11 @@ header {
     flex-direction: column;
     justify-content: center;
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     gap: 20px;
 }
 
-.modal-menor {
+.container-modal-2 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -322,27 +378,27 @@ header {
     color: #8871CC;
 }
 
-.txt2 {
+.texto2 {
     margin: 0px 0px 20px;
     font-size: 18px;
     line-height: 28px;
     color: #B4AEAE;
 }
 
-.container-buttons2 {
+.container-buttons-2 {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
-.cancelar2 {
+.cancelar-2 {
     width: 150px;
     height: 40px;
     background: white;
     border: 2px solid #8871CC;
     border-radius: 5px;
     color: #8871CC;
-    cursor: pointer;
+    
     font-family: 'Roboto';
     font-size: 18px;
 }
@@ -354,7 +410,12 @@ header {
     border: 2px solid #D7426F;
     border-radius: 5px;
     color: white;
-    cursor: pointer;
+    
     font-family: 'Roboto';
     font-size: 18px;
 }
+
+.pointer{
+    cursor: pointer;
+}
+

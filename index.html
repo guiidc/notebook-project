@@ -10,62 +10,66 @@
 </head>
 
 <body>
-    <header>
+    <section class="section-1">
+
         <div class="container-titulo">
             <span class="phone-book-app">PHONE BOOK APP</span>
         </div>
 
         <div>
-            <div class="container-informacao">
-                <span class="font4">Olá, Usuário</span>
-                <img class="vector" src="./images/user-icon-small.svg" alt="vector">
+            <div class="container-usuario-vetor">
+                <span class="ola-Usuario pointer">Olá, Usuário</span>
+                <img class="user-icon-small pointer" src="./images/user-icon-small.svg" alt="user-icon-small">
             </div>
         </div>
 
-        <div class="container-meus-contato">
-            <span class="font3">Meus Contatos</span>
-        </div>
-
-    </header>
-
-    <section id="section-1">
-
-
-        <div class="container-filtro">
-            <span class="font1">Filtrar por:</span>
-        </div>
-
-        <div class="container-familia">
-            <span class="font3">Família</span>
-        </div>
-
-        <div class="container-font2">
-            <span class="font2">Amigos</span>
-        </div>
-
-        <div class="container-font2">
-            <span class="font2">Outros</span>
-        </div>
-
-        <div class="container-criar-contato">
-            <img class="vector-mais" src="./images/plus-icon.svg" alt="vector+">
-            <span class="font4">Criar contato</span>
+        <div class="container-meus-contatos">
+            <span class="meus-contato">Meus Contatos</span>
         </div>
 
     </section>
 
     <section id="section-2">
 
-        <div class="alinha-centro">
-            <span class="font1">NOME</span>
+        <div class="container-tipo-contato">
+
+            <div class="container-filtrar-por">
+                <span class="filtrar-por">Filtrar por:</span>
+            </div>
+
+            <div class="container-familia pointer">
+                <span class="familia">Família</span>
+            </div>
+
+            <div class="container-amigos pointer">
+                <span class="amigos">Amigos</span>
+            </div>
+
+            <div class="container-outros pointer">
+                <span class="outros">Outros</span>
+            </div>
         </div>
 
-        <div class="alinha-centro">
-            <span class="font1">CONTATO</span>
+
+        <button class="button-criar-contato" id="button-criar-contato">
+            <img class="plus-icon pointer" src="./images/plus-icon.svg" alt="plus-icon">
+            <span class="cria-contato pointer">Criar contato</span>
+        </button>
+
+    </section>
+
+    <section id="section-3">
+
+        <div class="container-section-3">
+            <span class="section-3">NOME</span>
         </div>
 
-        <div class="alinha-centro">
-            <span class="font1">GRUPO</span>
+        <div class="container-section-3">
+            <span class="section-3">CONTATO</span>
+        </div>
+
+        <div class="container-section-3">
+            <span class="section-3">GRUPO</span>
         </div>
 
         <!-- elemento somente para manter a proporca
@@ -75,43 +79,47 @@
 
     </section>
 
-    <section id="section-3">
-        <div class="alinha-centro">
-            <span class="font1">nome contato</span>
+    <section id="section-4">
+
+        <div class="container-section-4">
+            <span class="section-4">nome contato</span>
         </div>
 
-        <div class="alinha-centro">
-            <span class="font1">telefone</span>
+        <div class="container-section-4">
+            <span class="section-4">telefone</span>
         </div>
-        
-                <div class="alinha-centro">
-                    <span class="font1">grupos</span>
-                </div>
-        
+
+        <div class="container-section-4">
+            <span class="section-4">grupos</span>
+        </div>
+
         <div class="container-seletores">
-            <span class="font5 bg-azul">EDITAR</span>
-            <span class="font5 bg-vermelho">REMOVER</span>
+            <button class="seletor bg-azul pointer">EDITAR</button>
+            <button class="seletor bg-vermelho pointer">REMOVER</button>
         </div>
 
     </section>
 
-    <section class="section-4">
+    <section class="section-5 " id="modaladded">
+
         <div class="modal-adicionar-editar">
-            <div class="contaner-font5">
+
+            <div class="container-modal-1">
                 <img class="icon-large" src="./images/user-icon-large.svg" alt="icon-large">
-                <span class="font6">CONTATO</span>
+                <span class="contato">CONTATO</span>
             </div>
 
-            <div class=" container-txt1">
-                <p class="txt1">Edite ou adicione as informações para seu contato
+            <div class=" container-p">
+                <p class="texto">Edite ou adicione as informações para seu contato
                     no formulário a baixo.
                 </p>
             </div>
 
             <div class="container-inputs">
-                <input class="input1" type="text" placeholder="Nome completo">
-                <input class="input1" type="text" placeholder="Contato">
-                <select class="input1" name="grupo" id="grupo">
+                <input class="input-txt" type="text" placeholder="Nome completo">
+                <input class="input-txt" type="text" placeholder="Contato">
+
+                <select class="input-txt" name="grupo" id="grupo">
                     <option value="familia">Família</option>
                     <option value="amigos">Amigos</option>
                     <option value="outros">Outros</option>
@@ -119,33 +127,34 @@
             </div>
 
             <div class="container-buttons">
-                <button class="cancelar">Cancelar</button>
-                <button class="salvar">SALVAR</button>
+                <button class="cancelar pointer">Cancelar</button>
+                <button class="salvar pointer">SALVAR</button>
             </div>
 
         </div>
 
     </section>
 
-    <section class="section-5">
+    <section class="section-6">
+
         <div class="modal-remover-contato">
 
-            <div class="modal-menor">
-                <img class="attention-icon"src="./images/attention-icon.svg" alt="attention-icon">
+            <div class="container-modal-2">
+                <img class="attention-icon" src="./images/attention-icon.svg" alt="attention-icon">
                 <span class="atençao">ATENÇÃO</span>
-                <p class="txt2">Você tem certeza que deseja remover este contato?</p>
+                <p class="texto2">Você tem certeza que deseja remover este contato?</p>
             </div>
 
-            <div class="container-buttons2">
-                <button class="cancelar2">Cancelar</button>
-                <button class="remover">REMOVER</button>
+            <div class="container-buttons-2">
+                <button class="cancelar-2 pointer">Cancelar</button>
+                <button class="remover pointer">REMOVER</button>
             </div>
 
         </div>
 
     </section>
 
-
+<script src="./script.js"></script>
 </body>
 
 </html>
