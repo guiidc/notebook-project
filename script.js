@@ -1,13 +1,10 @@
-function criarContato(){
-    const criaContato = document.querySelector(elemento)
-    // modalcria.classList.add("none")
-    console.log(el)
-}  
+function mostrarModal1(){
+    const modal = document.querySelector('#modaladded');
+    modal.classList.remove('none')
+} 
+const btnCriarContato = document.querySelector("#button-criar-contato")
+btnCriarContato.addEventListener('click',  mostrarModal1)
 
-
-
-const criaContato = document.querySelector("#button-criar-contato")
-criaContato.addEventListener('click', criarContato);
 
 
 
