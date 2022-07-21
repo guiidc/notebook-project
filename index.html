@@ -80,23 +80,27 @@
     </section>
 
     <section id="section-4">
+        <div class="card-contato">
+            <div class="container-section-4">
+                <span class="section-4" id="nome-contato">Nome Contato</span>
+            </div>
 
-        <div class="container-section-4">
-            <span class="section-4">nome contato</span>
+            <div class="container-section-4">
+                <span class="section-4">Telefone</span>
+            </div>
+
+            <div class="container-section-4">
+                <span class="section-4">Grupos</span>
+            </div>
+
+            <div class="container-seletores">
+                <button class="seletor bg-azul pointer">EDITAR</button>
+                <button class="seletor bg-vermelho pointer">REMOVER</button>
+            </div>
+
         </div>
 
-        <div class="container-section-4">
-            <span class="section-4">telefone</span>
-        </div>
 
-        <div class="container-section-4">
-            <span class="section-4">grupos</span>
-        </div>
-
-        <div class="container-seletores">
-            <button class="seletor bg-azul pointer">EDITAR</button>
-            <button class="seletor bg-vermelho pointer">REMOVER</button>
-        </div>
 
     </section>
 
@@ -116,8 +120,8 @@
             </div>
 
             <div class="container-inputs">
-                <input class="input-txt" type="text" placeholder="Nome completo">
-                <input class="input-txt" type="text" placeholder="Contato">
+                <input class="input-txt" type="text" placeholder="Nome completo" id="input-nome">
+                <input class="input-txt" type="text" placeholder="Contato" id="input-contato">
 
                 <select class="input-txt" name="grupo" id="grupo">
                     <option value="familia">Família</option>
@@ -128,7 +132,7 @@
 
             <div class="container-buttons">
                 <button class="cancelar pointer">Cancelar</button>
-                <button class="salvar pointer">SALVAR</button>
+                <button class="salvar pointer" id="salvar">SALVAR</button>
             </div>
 
         </div>
@@ -154,7 +158,7 @@
 
     </section>
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
