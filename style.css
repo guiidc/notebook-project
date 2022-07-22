@@ -16,9 +16,9 @@
 }
 
 .phone-book-app {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400px;
+    /* font-family: 'Roboto'; */
+    /* font-style: normal; */
+    /* font-weight: 00px; */
     font-size: 34px;
     color: #FFFFFF;
 }
@@ -191,12 +191,12 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.container-section-4 {
+.flex-center {
     display: flex;
     align-items: center;
-}
+} 
 
-.section-4{
+.fonte-card{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -204,13 +204,13 @@
     color: #B4AEAE;
 }
 
-.container-seletores {
+.container-btn-acao {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
 }
 
-.seletor {
+.btn-acao {
     border: none;
     border-radius: 3px;
     padding: 10px 10px;
