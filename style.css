@@ -241,9 +241,7 @@
     align-items: center;
 }
 
-.none{
-    display: none;
-}
+
 
 .modal-adicionar-editar {
     display: flex;
@@ -332,7 +330,7 @@
 }
 
 .section-6 {
-    display: none;
+    display: flex;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.8);
@@ -343,8 +341,8 @@
     align-items: center;
 }
 
-.section-6.none{
-    display: flex;
+.none{
+    display: none;
 }
 
 .modal-remover-contato {
