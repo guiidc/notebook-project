@@ -14,7 +14,7 @@ function mostrarModal1() {
     modal.classList.remove('none')
 }
 
-function limparInputs(){
+function limparInputs() {
     inputNome.value = ''
     inputContato.value = ''
 }
@@ -25,13 +25,13 @@ function fecharModal() {
 
 }
 
-function fecharModalRemover(){
-    
+function fecharModalRemover() {
+
     modalRemover.classList.remove('none')
-    
+
 }
 
-function fecharModalRemocao(){
+function fecharModalRemocao() {
     modalRemover.classList.add('none')
 }
 
@@ -40,7 +40,7 @@ function criaContato() {
     const nome = inputNome.value
     const contato = inputContato.value
     const grupo = inputGrupo.value
-    
+
 
     const cardContatoDiv = document.createElement('div')
     cardContatoDiv.classList.add('card-contato')
@@ -87,7 +87,7 @@ function criaContato() {
 
     const btnRemover = document.createElement('button')
     btnRemover.classList.add('btn-acao', 'bg-vermelho', 'pointer')
-    btnRemover.innerText ='REMOVER'
+    btnRemover.innerText = 'REMOVER'
     btnRemover.addEventListener('click', fecharModalRemover)
 
     containerBtnAcao.appendChild(btnRemover)
@@ -100,9 +100,9 @@ function criaContato() {
     const sectionCard = document.querySelector('#section-card')
     sectionCard.appendChild(cardContatoDiv)
 
-   limparInputs()
+    limparInputs()
     modal.classList.add('none')
-    
+
 }
 
 btnCriarContato.addEventListener('click', mostrarModal1)
