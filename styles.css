@@ -1,3 +1,435 @@
-h1 {
-  color: red;
+/*CORPO*/
+* {
+	padding: 0;
+	margin: 0;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	box-sizing: border-box;
+}
+/*fecha corpo*/
+
+/*criar mãozinho no mause*/
+.pointer {
+	cursor: pointer;
+}
+
+/*PHONE BOOK*/
+.seletor1 {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 70px;
+	height: 250px;
+	width: 100vw;
+	background: linear-gradient(#4e4280, #77699b);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
+}
+
+.phone-book-app {
+	color: #ffff;
+	font-size: 40px;
+}
+/*ACABA PHONE BOOK*/
+
+.wrapper-usuario {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+/*TEXTO OLA*/
+.ola-Usuario {
+	display: inline;
+	font-weight: 400;
+	font-size: 30px;
+	color: #ffff;
+	
+} 
+/*ACABA TEXTO*/
+
+/*ABA MEUS CONTATOS*/
+.container-meus-contatos {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: absolute;
+	width: 250px;
+	height: 50px;
+	left: 80px;
+	bottom: 0px;
+	color: #ffff;
+	background-color: #8871c9;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.meus-contatos {
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	font-size: 25px;
+	color: #ffff;
+}
+
+/*ACABA ABA MEUS CONTATOS*/
+
+/*FILTRR POR / O "." é pra fazer referência a uma classe que você definiu no HTML e o "#" é pra fazer referência a "id" :*/
+#seletor2 {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 0% 50px;
+	margin: 20px;
+}
+
+.container-contato {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.container-filtrar {
+	display: inline-flex;
+	margin: 5px;
+}
+
+.filtrar-por {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: normal;
+	font-size: 30px;
+	color: #b1afb0;
+}
+
+.container-familia {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #8871CC;
+	border-radius: 25px;
+	width: 160px;
+	height: 40px;
+}
+
+.familia {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+	font-weight: 400;
+	font-size: 25px;
+	color: #ffff;
+}
+
+.container-amigos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160px;
+	height: 40px;
+	background-color: #ffff;
+	border-radius: 25px;
+	border: 2px solid #8871CC;
+}
+
+.amigos {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 25px;
+	color: #8871CC;
+}
+
+.container-outros {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160px;
+	height: 40px;
+	background-color: #ffff;
+	border: 2px;
+	border-radius: 25px solid #8871CC;
+}
+
+.outros {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 160px;
+	height: 40px;
+	background-color: #ffff;
+	border-radius: 25px;
+	border: 2px solid #8871CC;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 25px;
+	color: #8871CC;
+}
+
+/*ACABA FILTRAR POR*/
+
+/*CRIAR CONTATO*/
+.button-criar-contato {
+	border: none;
+	display: flex;
+	align-items: center;
+	padding: 2px 25px;
+	gap: 5px;
+	background-color: #12d991;
+	border-radius: 5px;
+}
+
+.criar-contato {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	color: #ffff;
+}
+/*ACABA CRIAR CONTATO*/
+
+/*NOME - CONTATO - GRUPO*/
+#seletor3 {
+	padding: 13px 15px;
+	margin: 3px 70px;
+	background: #f7f7f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.30);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-seletor3{
+    display: flex;
+    align-items: center;
+}
+
+.seletor3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #B4AEAE; 
+}
+/*ACABA NOME - CONTATO - GRUPO*/
+
+/*CAIXA EDITAR - REMOVER */
+.card-contato {
+    padding: 12px 15px;
+    margin: 1px 70px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+} 
+
+.fonte-card{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #B4AEAE;
+}
+/*ACABA CAIXA EDITAR - REMOVER */
+
+/*REMOVER - EDITAR CONF*/
+
+
+.container-btn-acao {
+	display: flex;
+	gap: 10px;
+	justify-content:flex-end;
+}
+
+.btn-acao {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+
+.background-azul {
+	background-color: #10b1d8;
+}
+
+.background-vermelho {
+	background-color: #d64872;
+}
+
+/*ACABA REMOVER - EDITAR CONF*/
+
+#seletor4 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(59, 58, 58, 0.8);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+}
+
+.none{
+    display: none;
+} 
+
+.modal-remover-contato {
+    display: flex;
+    padding: 20px 70px 30px 70px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.container-modal-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.attention-icon {
+    display: flex;
+    width: 90px;
+}
+
+.atençao {
+	justify-content: center;
+	display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #8871CC;
+}
+
+.texto1 {
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #B4AEAE;
+}
+
+.container-buttons-1 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cancelar-1 {
+    width: 150px;
+    height: 40px;
+    background: white;
+    border: 2px solid #8871CC;
+    border-radius: 5px;
+    color: #8871CC;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.remover {
+    width: 150px;
+    height: 40px;
+    background: #D7426F;
+    border: 2px solid #D7426F;
+    border-radius: 5px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+.seletor5 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(59, 58, 58, 0.8);
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+}
+
+.none{
+    display: none;
+} 
+
+.modal-salvar-contato {
+    display: flex;
+    padding: 20px 70px 30px 70px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f3f2f2;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.container-modal-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-icon-large {
+    display: flex;
+    width: 90px;
+}
+
+.contato {
+	justify-content: center;
+	display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #8871CC;
+}
+
+.texto2 {
+    margin: 0px 0px 20px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #B4AEAE;
+}
+
+.container-buttons-2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cancelar-2 {
+    width: 150px;
+    height: 40px;
+    background: white;
+    border: 2px solid #8871CC;
+    border-radius: 5px;
+    color: #8871CC;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.salvar {
+    width: 150px;
+    height: 40px;
+    background:  #12d991;
+    border: 2px solid  #12d991;
+    border-radius: 5px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.none {
+    display: none;
 }
