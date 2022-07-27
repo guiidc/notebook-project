@@ -1,28 +1,43 @@
-const sectionCard = document.querySelector('#section-card')
 const btnCriarContato = document.querySelector('#button-criar-contato')
-const modalAddEd = document.querySelector('#modaladded')
+const sectionCard = document.querySelector('#section-card')
+const modalAddEd = document.querySelector('#modal-add-ed')
 const btnSalvarContato = document.querySelector('#btn-salvar')
 const inputNome = document.querySelector('#input-nome')
 const inputContato = document.querySelector('#input-contato')
 const inputGrupo = document.querySelector('#grupo')
 const idBtnCancelar = document.querySelector('#btn-cancelar')
-
+const modalRemover = document.querySelector('#modal-remover')
+const btnCancelarRemocao = document.querySelector('#btn-cancelar-remocao')
 
 btnCriarContato.addEventListener('click', mostrarModalCriarCont)
 btnSalvarContato.addEventListener('click', salvaContato)
 idBtnCancelar.addEventListener('click', fecharModalCadastro)
-
-
-function mostrarModalCriarCont(){
+btnCancelarRemocao.addEventListener('click', btnCancelaRemover)
+    
+function mostrarModalCriarCont() {
     modalAddEd.classList.remove('none')
-} 
+}
 
-function fecharModalCadastro(){
-    modalAddEd.classList.add('none')
+function btnModalRemover() {
+    modalRemover.classList.remove('none')
 }
 
 
-function salvaContato(){
+function fecharModalCadastro() {
+    limparImputs()
+    modalAddEd.classList.add('none')
+}
+
+function limparImputs() {
+    inputNome.value = ''
+    inputContato.value = ''
+}
+
+function btnCancelaRemover() {
+    modalRemover.classList.add('none')
+}
+
+function salvaContato() {
     const nome = inputNome.value
     const contato = inputContato.value
     const grupo = inputGrupo.value
@@ -35,7 +50,7 @@ function salvaContato(){
     const spanNome = document.createElement('span')
     spanNome.classList.add('fonte-card')
     spanNome.innerText = nome
-    divNome.appendChild(spanNome)    
+    divNome.appendChild(spanNome)
     ContainerCardContato.appendChild(divNome)
 
     const divContato = document.createElement('div')
@@ -59,18 +74,24 @@ function salvaContato(){
     const btnAcaoEditar = document.createElement('button')
     btnAcaoEditar.classList.add('btn-acao', 'bg-azul', 'pointer')
     btnAcaoEditar.innerText = 'EDITAR'
+    btnAcaoEditar.addEventListener('click', mostrarModalCriarCont)
     containerBtnAcao.appendChild(btnAcaoEditar)
-    
+
     const btnAcaoRemover = document.createElement('button')
     btnAcaoRemover.classList.add('btn-acao', 'bg-vermelho', 'pointer')
     btnAcaoRemover.innerText = 'REMOVER'
-    containerBtnAcao.appendChild(btnAcaoRemover)
+    btnAcaoRemover.addEventListener('click', btnModalRemover)
+    // APAGAR DEPOIS
+
     
+    containerBtnAcao.appendChild(btnAcaoRemover)
+
     ContainerCardContato.appendChild(containerBtnAcao)
 
     sectionCard.appendChild(ContainerCardContato)
-    fecharModalCadastro();
+
+    modalAddEd.classList.add('none')
+
+    limparImputs()
+
 }
-
-
-//  console.log(btnCriarContato)
