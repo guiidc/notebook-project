@@ -22,44 +22,13 @@ function mostrarModalCriarCont() {
 
 let contatoASerRemovido = null;
 
-function mostrarModalRemover(evento) {
-    // ESTAMOS RECEBENDO UM PARAMETRO QUE REPRESENTA O EVENTO
-    // POREM PODEMOS CHAMAR DE QUALQUER NOME QUE QUISERMOS
-    // POIS SE TRATA DE UM PARAMETRO COMO QUALQUER OUTRO
-    // PODERIAMOS CHAMAR A OU B, MAS ESTAMOS CHAMANDO DE EVENTO
-    // POR MOTIVOS DE CONTEXTO
+function mostrarModalRemover(confirmacao) {
 
-    // NESTE EVENTO TEMOS UM PROPRIEDADE CHAMADA TARGET
-    // QUE É O ELEMENTO QUE DISPAROU O EVENTO
-    // ENTAO PARA PEGARMOS BASTA DIGITAR O elemento.taget
-
-    const target = evento.target; // SEGURA O BOTAO REMOVER QUE DISPAROU O EVENTO
-
-    // NOS ELEMENTOS HTML (EM TODOS) TEMOS UMA PROPRIEDADE CHAMADA
-
-    // elemento.parentElment QUE ENTREGA O PAI DO ELEMENTO EM QUESTAO
-    // ENTAO SE PEGARMOS O BOTAO QUE OBTVEMOS COM O TARGET E BUSCARMOS A PROPRIEDADE
-    // PARENTELEMENT DELE, VAMOS OBTER O PAI DO BOTAO QUE É O CONTAINER
+    const target = confirmacao.target; // SEGURA O BOTAO REMOVER QUE DISPAROU O EVENTO
     const containerBotoesAcao = target.parentElement;
-
-    // AQUI PEGAMOS O PAI DO BOTAO QUE ENCONTRAMOS E BUSCAMOS MAIS UMA VEZ O PAI
-    // UTILIZANDO O elemento.parentElement PEGANDO ASSIM O PAI DO CONTAINER
-    // QUE SEGURA OS BOTÕES (AVÔ DOS BOTÕES) QUE É JUSTAMENTO NOSSO CARD DE CONTATOS
     const cardContact = containerBotoesAcao.parentElement
-
-    // COMO SABEMOS QUE TODO CLIQUE IREMOS RECRIAR O CODIGO DENTRO DESTA FUNCAO
-    // PRECISAMOS DEIXA ESSE "AVÔ" QUE É NOSSO CARD SALVO EM UMA VARIAVEL GLOBAL
-    // PARA QUE NOSSA FUNCAO removerContatoSelecionado QUE É QUEM DE FATO REMOVE O CONTATO
-    // POIS ELA É DISPARADA PELO BOTAO DE REMOVER DO MODAL
-    // A FUNCAO QUE ESTAMOS DENTRO ATUALMENTE É DISPARADA PELO BOTAO REMOVER DO CARD
-    // ENTAO COMO PRECISAMOS DA INFORMACAO DE CONFIRMACAO DO USUARIO
-    // NAO PODEMOS REMOVER ELA AQUI DENTRO DESTA FUNCAO
     contatoASerRemovido = cardContact
 
-    // AQUI NADA DE NOVO, SOMENTE STAMOS REMOVENDO A CLASSE NONE DO MODAL DE CONFIRMACAO DE REMOCAO
-    // PARA QUE ELE SEJA EXIBIDO PRO USUÁRIO
-    // O PROXIMOS PASSO ESTRA DENTRO DA FUNCAO QUE REMOVE O USUARIO DE FATO
-    // CHAMADA DE removerContatoSelecionado
     modalRemover.classList.remove('none')
 }
 
@@ -78,11 +47,9 @@ function fecharModalRemocao() {
 }
 
 function removerContatoSelecionado() {
-    // AQUI ESTAMOS ACESSANDO A VARIAVEL GLOBAL CRIADA PELA FUNCAO
-    // mostrarModalRemover
+
     contatoASerRemovido.remove()
 
-    //AQUI ESTAMOS SOMENTE FECHANDO O MODAL
     fecharModalRemocao()
 }
 
@@ -117,7 +84,6 @@ function salvaContato() {
     spanGrupo.innerText = grupo
     divGupo.appendChild(spanGrupo)
     ContainerCardContato.appendChild(divGupo)
-  
 
     const containerBtnAcao = document.createElement('div')
     containerBtnAcao.classList.add('container-btn-acao')
@@ -130,18 +96,9 @@ function salvaContato() {
     const btnAcaoRemover = document.createElement('button')
     btnAcaoRemover.classList.add('btn-acao', 'bg-vermelho', 'pointer')
     btnAcaoRemover.innerText = 'REMOVER'
-
-    // O JAVA SCRIPT SEMPRE PASSA UM PARAMETRO PRA FUNCAO APONTADA
-    // NO EVENTLISTENER QUE É O EVENTO
-    // EM TODAS ELAS, MAS COMO NAO PRECISAMOS USAR
-    // ACABAMOS NAO VENDO ELE
-    // NESTA FUNCAO DE BAIXO, NÓS VAMOS TRABALHAR COM ELE
-    // DENTRO DA FUNCAO VOCÊ VAI VER ELE
     btnAcaoRemover.addEventListener('click', mostrarModalRemover)
 
-    
     containerBtnAcao.appendChild(btnAcaoRemover)
-
     ContainerCardContato.appendChild(containerBtnAcao)
 
     sectionCard.appendChild(ContainerCardContato)
@@ -149,5 +106,4 @@ function salvaContato() {
     modalAddEd.classList.add('none')
 
     limparImputs()
-
 }
