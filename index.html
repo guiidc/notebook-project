@@ -2,52 +2,38 @@
 <html lang="pt-BR">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="largura=largura do dispositivo, escala inicial=1.0">
-
-	<!--adicionar icone na aba-->
-	<link rel="shortcut icon" href="img/user-icon-small.svg" type="image/x-icon">
-	<!-- acaba aqui -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<title>PHONE BOOK APP</title>
+	<title>Lista de Contatos</title>
 </head>
 
 <body>
-	<!--CORPO DO CODIGO -->
-	<section class="seletor1">
+	<section class="section-1">
 		<div class="container-titulo">
-			<span class="phone-book-app">PHONE BOOK APP</span> <!-- PRIMEIRO TEXTO -->
+			<span class="phone-book-app">PHONE BOOK APP</span>
 		</div>
-
-		<div class="container-usuario-vetor">
-			<!--ICON AO LADO DO OLÁ -->
-			<div class="wrapper-usuario">
-				<span class="ola-Usuario pointer">Olá Usuário</span>
-				<!--TEXTO LADO DO ICON -->
-				<img class="user-icon-small pointer" src="images/user-icon-small.svg" alt="user-icon-small">
-				<!--IMG ICON CONTATO/ POINTER PARA DEIXAR MÃOZINHA EM CIMA E MAUSE FORA-->
-
+		<div>
+			<div class="container-usuario-vetor">
+				<span class="ola-Usuario pointer">Olá, Usuário</span>
+				<img class="user-icon-small pointer" src="./images/user-icon-small.svg" alt="user-icon-small">
 			</div>
 		</div>
-		</div>
-
 		<div class="container-meus-contatos">
-			<!--ABA MEUS CONTATOS-->
-			<span class="meus-contatos">Meus Contatos</span>
+			<span class="meus-contato">Meus Contatos</span>
 		</div>
 	</section>
 
-	<section id="seletor2">
-		<!-- BARRA FILTRAR POR -->
+	<section id="section-2">
+		<div class="container-tipo-contato">
 
-		<div class="container-contato">
-
-			<div class="container-filtrar">
+			<div class="container-filtrar-por">
 				<span class="filtrar-por">Filtrar por:</span>
 			</div>
 
 			<div class="container-familia pointer">
-				<span class="familia">Familia</span>
+				<span class="familia">Família</span>
 			</div>
 
 			<div class="container-amigos pointer">
@@ -58,91 +44,94 @@
 				<span class="outros">Outros</span>
 			</div>
 		</div>
-
 		<button class="button-criar-contato" id="button-criar-contato">
-			<!--CRIAR BOTÃO CONTATO-->
-			<img class="plus-icon pointer" src="images/plus-icon.svg">
-			<!--ICON + -->
-			<span class="criar-contato pointer">CRIAR CONTATO</span>
+			<img class="plus-icon pointer" src="./images/plus-icon.svg" alt="plus-icon">
+			<span class="cria-contato pointer">Criar contato</span>
 		</button>
-
 	</section>
 
-	<section id="seletor3">
+	<section id="section-3">
 
-		<div class="container-seletor3">
-			<!-- BARRA DE BAIXO DO FILTRAR POR -->
-			<span class="seletor3">NOME</span>
+		<div class="container-section-3">
+			<span class="section-3">NOME</span>
 		</div>
 
-		<div class="container-seletor3">
-			<span class="seletor3">CONTATO</span>
+		<div class="container-section-3">
+			<span class="section-3">CONTATO</span>
 		</div>
 
-		<div class="container-seletor3">
-			<span class="seletor3">GRUPO</span>
+		<div class="container-section-3">
+			<span class="section-3">GRUPO</span>
 		</div>
 	</section>
-	<!-- CAIXA ONDE VAI OS DADOS -->
+
 	<section id="section-card">
-		<div class="card-contato">
-
-			<div class="flex-center">
-				<span class="fonte-card">Nome </span>
-			</div>
-
-			<div class="flex-center">
-				<span class="fonte-card">Contato</span>
-			</div>
-
-			<div class="flex-center">
-				<span class="fonte-card">Grupo</span>
-			</div>
-
-			<!-- BTN ACAO DO BOTÃO -->
-			<div class="container-btn-acao">
-				<button class="btn-acao background-azul pointer" id="editar">EDITAR</button>
-				<button class="btn-acao background-vermelho pointer" id="remover">REMOVER</button>
-			</div>
-		</div>
-		</div>
+		<!-- <div class="container-card-contato">
+            <div class="flex-center">
+                <span class="fonte-card">Nome </span>
+            </div>
+            <div class="flex-center">
+                <span class="fonte-card">Contato</span>
+            </div>
+            <div class="flex-center">
+                <span class="fonte-card">Grupo</span>
+            </div>
+            <div class="container-btn-acao">
+                <button class="btn-acao bg-azul pointer" id="btn-editar">EDITAR</button>
+                <button class="btn-acao bg-vermelho pointer" id="btn-remover">REMOVER</button>
+            </div>
+        </div> -->
 	</section>
 
-	<section class="seletor4 none" id="modal-remover">
-		<div class="modal-remover-contato">
+	<section class="section-5 none" id="modal-add-ed">
+		<div class="modal-adicionar-editar">
 
 			<div class="container-modal-1">
-				<img class="attention-icon pointer" src="images/attention-icon.svg" alt="attention-icon">
-				<span class="atençao">ATENÇÃO</span>
-				<p class="texto1">Você tem certeza que deseja remover este contato?"</p>
+				<img class="icon-large" src="./images/user-icon-large.svg" alt="icon-large">
+				<span class="contato">CONTATO</span>
 			</div>
 
-			<div class="container-buttons-1">
-				<button class="cancelar-1 pointer" id="btn-cancelar-remocao">Cancelar</button>
-				<button class="remover pointer">REMOVER</button>
+			<div class=" container-p">
+				<p class="texto">Edite ou adicione as informações para seu contato
+					no formulário a baixo.
+				</p>
+			</div>
+
+			<div class="container-inputs">
+				<input class="input-txt" type="text" placeholder="Nome completo" id="input-nome">
+				<input class="input-txt" type="text" placeholder="Contato" id="input-contato">
+
+				<select class="input-txt" name="grupo" id="grupo">
+					<option value="Familia">Família</option>
+					<option value="Amigos">Amigos</option>
+					<option value="Outros">Outros</option>
+				</select>
+			</div>
+
+			<div class="container-buttons">
+				<button class="cancelar pointer" id="btn-cancelar">Cancelar</button>
+				<button class="salvar pointer" id="btn-salvar">SALVAR</button>
 			</div>
 		</div>
 	</section>
 
-	<section class="seletor5 " id="modal-salvar">
-		<div class="modal-salvar-contato">
+	<section class="section-6 none" id="modal-remover">
+		<div class="modal-remover-contato">
 
 			<div class="container-modal-2">
-				<img class="user-icon-large" src="images/user-icon-large.svg" alt="user-icon-large">
-				<span class="contato">CONTATO</span>
-				<p class="texto2">Edite ou adicione as informações para seu contato
-					no formulário a baixo."</p>
+				<img class="attention-icon" src="./images/attention-icon.svg" alt="attention-icon">
+				<span class="atençao">ATENÇÃO</span>
+				<p class="texto2">Você tem certeza que deseja remover este contato?</p>
 			</div>
 
 			<div class="container-buttons-2">
 				<button class="cancelar-2 pointer" id="btn-cancelar-remocao">Cancelar</button>
-				<button class="salvar pointer">SALVAR</button>
+				<button class="remover pointer" id="btn-remover-contato-selecionado">REMOVER</button>
 			</div>
 		</div>
 	</section>
-
-
-
+	<script src="./script.js">
+	</script>
 </body>
 
 </html>
